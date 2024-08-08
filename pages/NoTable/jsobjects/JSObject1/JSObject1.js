@@ -123,7 +123,7 @@ export default {
 	shwQuoteOnTxtBox:()=>{
 		//-----If user want to view main quote i.e not Favorite view
 		if (!this.favViewActive){	
-			//Butt_star.setVisibility(false)
+			Butt_star.setVisibility(true)
 			Sh1NotUsedInTable__qry.run()
 				.then(() =>Text1_quote.setText(Sh1NotUsedInTable__qry.data[0].Quotes).toString())
 				.then(() => JSObject1.shwPgNum())
@@ -134,6 +134,7 @@ export default {
 
 
 		}else{//--user want to view Favorite Quotes
+			Butt_star.setVisibility(true);
 			FavNotUseInTable2_qry.run()
 				.then(()=> Text1_quote.setText(FavNotUseInTable2_qry.data[0].Quotes.toString()) )
 				.then(() => JSObject1.shwPgNum())
@@ -149,7 +150,7 @@ export default {
 			FavUseInTable_qry.data.filter( itm=>{
 				return	itm.UserEmail==appsmith.user.email?this.usrFavTotal++:nomtch++;
 			})
-		}).then(()=>this.usrFavTotal>0?Butt_star.setVisibility(true):Butt_star.setVisibility(false))
+		}).then(()=>this.usrFavTotal>0?Butt_star.setVisibility(true):Butt_star.setVisibility(true))
 		//.then(()=>showAlert('2nd showAlert  this.usrFavTotal='+this.usrFavTotal))
 			.then(()=>{
 			if (this.usrFavTotal>0){
