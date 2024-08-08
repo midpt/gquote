@@ -1,0 +1,57 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "LEFT",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 5,
+  "defaultCheckedState": true,
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onCheckChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onCheckChange"
+    }
+  ],
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "2e92jp25jx",
+  "label": "Shuffle",
+  "labelPosition": "Right",
+  "leftColumn": 12,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 6,
+  "mobileLeftColumn": 15,
+  "mobileRightColumn": 27,
+  "mobileTopRow": 2,
+  "needsErrorInfo": false,
+  "onCheckChange": "{{\n\nJSObject1.chkBox1()\n .then(()=>JSObject1.shwQuoteOnTxtBox())\n\n}}",
+  "originalBottomRow": 7,
+  "originalTopRow": 2,
+  "parentColumnSpace": 10.513671875,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 21,
+  "topRow": 1,
+  "type": "CHECKBOX_WIDGET",
+  "version": 1,
+  "widgetId": "12yeav8ixo",
+  "widgetName": "Checkbox1"
+}

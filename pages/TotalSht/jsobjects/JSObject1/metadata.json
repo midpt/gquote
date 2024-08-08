@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "6672d3717c18db02f3fa3681_b3d097b2-6345-4847-88b9-9ce355eb660d",
+  "id": "TotalSht_JSObject1",
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "TotalSht",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

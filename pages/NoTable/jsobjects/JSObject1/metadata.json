@@ -1,0 +1,72 @@
+{
+  "gitSyncId": "6672d3717c18db02f3fa3681_b3460b26-81f3-431c-916b-b5eaec71d89a",
+  "id": "NoTable_JSObject1",
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "NoTable",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      },
+      {
+        "name": "firstLoad",
+        "value": "1"
+      },
+      {
+        "name": "rowToSkipB4Qry",
+        "value": "0"
+      },
+      {
+        "name": "favRowToSkipB4Qry",
+        "value": "0"
+      },
+      {
+        "name": "totalRec4CurAuthor",
+        "value": "AuthorTotal_qry.data.filter(i => i.AuthorNoRepeat == Select_author.selectedOptionValue).map(a => a.TotalRecord)"
+      },
+      {
+        "name": "favTotalRec4CurAuthor",
+        "value": "0"
+      },
+      {
+        "name": "totalRecInSheet1",
+        "value": "0"
+      },
+      {
+        "name": "lastRecNo",
+        "value": "0"
+      },
+      {
+        "name": "nonFavSelOpt",
+        "value": "[]"
+      },
+      {
+        "name": "favTotal",
+        "value": "0"
+      },
+      {
+        "name": "usrFavTotal",
+        "value": "0"
+      },
+      {
+        "name": "usrCurFav",
+        "value": "0"
+      },
+      {
+        "name": "usrFavUnicAthrTotal",
+        "value": "0"
+      },
+      {
+        "name": "favViewActive",
+        "value": "0"
+      }
+    ]
+  }
+}
