@@ -14,6 +14,11 @@
   "applicationVersion": 2,
   "collapseInvisibleWidgets": true,
   "color": "#C7F3E3",
+  "embedSetting": {
+    "height": "720px",
+    "showNavigationBar": true,
+    "width": "1024px"
+  },
   "evaluationVersion": 2,
   "icon": "chat",
   "pages": [
