@@ -68,7 +68,7 @@ export default {
 			.then(  (favUniqueAthr)=> JSObject1.createSelOption(favUniqueAthr))
 			.then ((result)=>{ress=result; })
 			.then (() => FavNotUseInTable2_qry.run())
-			.then(() => {this.favTotalRec4CurAuthor= FavNotUseInTable2_qry.data.length;showAlert('In getFavUniAthrThe...  this.favTotalRec4CurAuthor='+this.favTotalRec4CurAuthor+' favTotal='+this.favTotal);return 'ok'} )
+			.then(() => {this.favTotalRec4CurAuthor= FavNotUseInTable2_qry.data.length;//showAlert('In getFavUniAthrThe...  this.favTotalRec4CurAuthor='+this.favTotalRec4CurAuthor+' favTotal='+this.favTotal);return 'ok'} )
 			.then (() =>JSObject1.shwQuoteOnTxtBox())
 		//return ress;
 	},
@@ -93,7 +93,7 @@ export default {
 			this.rowToSkipB4Qry=0;
 
 			this.totalRec4CurAuthor= await AuthorTotal_qry.data.filter(i=>i.AuthorNoRepeat==Select_author.selectedOptionValue).map(a=>a.TotalRecord)
-			showAlert('B4 else resfreshTotalRec  Select_author.selectedOptionValu='+Select_author.selectedOptionValue+' this.totalRec4CurAuthor='+this.totalRec4CurAuthor)
+			//showAlert('B4 else resfreshTotalRec  Select_author.selectedOptionValu='+Select_author.selectedOptionValue+' this.totalRec4CurAuthor='+this.totalRec4CurAuthor)
 			JSObject1.shwQuoteOnTxtBox()
 
 		}else{ //----user want to view Fav quote
@@ -102,7 +102,7 @@ export default {
 			await FavNotUseInTable1_qry.data.filter(i=>i.Authors==curUsrSelAthr && i.UserEmail==appsmith.user.email.toString()).map(a=>ress++);
 			this.favTotalRec4CurAuthor=ress;
 			this.favRowToSkipB4Qry=0;
-			showAlert('Else in resfreshTotalRec  favTotalRec4CurAuthor='+this.favTotalRec4CurAuthor);
+			//showAlert('Else in resfreshTotalRec  favTotalRec4CurAuthor='+this.favTotalRec4CurAuthor);
 			JSObject1.shwQuoteOnTxtBox()
 
 		}	
@@ -205,7 +205,9 @@ export default {
 					return	this.favRowToSkipB4Qry++;
 					//	var aa=  AuthorTotal_qry.data.filter(i=>i.AuthorNoRepeat.filter(j=>j.AuthorNoRepeat))
 					//	resolve('nxtPg Ok.');
-				}else{return showAlert('curFavRowToSkipB4Qry='+this.favRowToSkipB4Qry+'  favTotalRec4CurAuthor='+this.favTotalRec4CurAuthor)}
+				}else{
+					//return showAlert('curFavRowToSkipB4Qry='+this.favRowToSkipB4Qry+'  favTotalRec4CurAuthor='+this.favTotalRec4CurAuthor
+													)}
 				//});
 
 				//--Get randomised Quote--
@@ -233,7 +235,9 @@ export default {
 				if (this.favRowToSkipB4Qry >0){
 					return	this.favRowToSkipB4Qry=this.favRowToSkipB4Qry-1;
 					//resolve('previousPg Ok');
-				}else{return showAlert('curFavRowToSkipB4Qry='+this.favRowToSkipB4Qry+'  favTotalRec4CurAuthor='+this.favTotalRec4CurAuthor)}
+				}else{
+					//return showAlert('curFavRowToSkipB4Qry='+this.favRowToSkipB4Qry+'  favTotalRec4CurAuthor='+this.favTotalRec4CurAuthor)
+				}
 
 			}else JSObject1.chkBox1(); // get randomise quote
 		}
