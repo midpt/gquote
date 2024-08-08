@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 10,
+  "bottomRow": 11,
   "boxShadow": "none",
   "defaultText": "{{appsmith.user.email}}",
   "dynamicBindingPathList": [
@@ -52,7 +52,7 @@
   "rightColumn": 62,
   "shouldAllowAutofill": true,
   "showStepArrows": false,
-  "topRow": 4,
+  "topRow": 5,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "sff18770cu",
