@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "fullyQualifiedName": "JSObject1.totalRowInSht1NFav",
     "name": "totalRowInSht1NFav",
     "pageId": "NoTable",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

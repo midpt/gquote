@@ -94,7 +94,7 @@
         "key": "formData.where.data.children[1].value"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "FavNotUseInTable2_qry",
     "pageId": "NoTable",
     "userSetOnLoad": false
