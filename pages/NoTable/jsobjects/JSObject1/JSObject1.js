@@ -68,7 +68,10 @@ export default {
 			.then(  (favUniqueAthr)=> JSObject1.createSelOption(favUniqueAthr))
 			.then ((result)=>{ress=result; })
 			.then (() => FavNotUseInTable2_qry.run())
-			.then(() => {this.favTotalRec4CurAuthor= FavNotUseInTable2_qry.data.length;//showAlert('In getFavUniAthrThe...  this.favTotalRec4CurAuthor='+this.favTotalRec4CurAuthor+' favTotal='+this.favTotal);return 'ok'} )
+			.then(() => {
+			              this.favTotalRec4CurAuthor= FavNotUseInTable2_qry.data.length;
+									// showAlert('In getFavUniAthrThe...  this.favTotalRec4CurAuthor='+this.favTotalRec4CurAuthor+' favTotal='+this.favTotal);return 'ok'
+		               })
 			.then (() =>JSObject1.shwQuoteOnTxtBox())
 		//return ress;
 	},
@@ -206,8 +209,8 @@ export default {
 					//	var aa=  AuthorTotal_qry.data.filter(i=>i.AuthorNoRepeat.filter(j=>j.AuthorNoRepeat))
 					//	resolve('nxtPg Ok.');
 				}else{
-					//return showAlert('curFavRowToSkipB4Qry='+this.favRowToSkipB4Qry+'  favTotalRec4CurAuthor='+this.favTotalRec4CurAuthor
-													)}
+					//return showAlert('curFavRowToSkipB4Qry='+this.favRowToSkipB4Qry+'  favTotalRec4CurAuthor='+this.favTotalRec4CurAuthor)
+				   }
 				//});
 
 				//--Get randomised Quote--
