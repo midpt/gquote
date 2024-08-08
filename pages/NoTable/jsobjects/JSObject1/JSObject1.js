@@ -16,11 +16,7 @@ export default {
 	favViewActive:0, // 1 user want to view his Favourie quotes; changes when user click butt_star
 
 	func1(){
-		//	Select_author.setOptions("apple"); 
-		//--set defualt selected label
-		//Select_author.setSelectedOption("Mahatma Gandhi")
-		//	.then(()=>showAlert(Select_author.selectedOptionValue+'  '+Select_author.selectedOptionLabel))
-		Container2.setVisibility(false)
+	 Butt_star.setLabel()
 
 	},
 
@@ -288,6 +284,7 @@ export default {
       //--show grahic Quote (not Fav)  
 			Img_FavOrNoFav.setImage('https://drive.google.com/thumbnail?id=1B949-AqBpIgnCHbcVi4cc_oa5LOHS_ww&sz=w66');
 			Select_author.setSelectedOption("TF") 
+			Butt_star.setLabel('Favorite')
 				.then(()=> JSObject1.refreshTotalRec())
 			// no need to call JSObject1.refreshTotalRec(), since we call assign 'TF' directly to totalRec4CurAuthor
 			//this.totalRec4CurAuthor';
@@ -304,6 +301,7 @@ export default {
 			//Img_FavOrNoFav.setVisibility(true);
 			 //--show grahic Quote ( Fav)  
 			Img_FavOrNoFav.setImage('https://drive.google.com/thumbnail?id=1cY-ivcKCaa79lCmzc_BwbLTEkAwQe8OW&sz=w66');
+			Butt_star.setLabel('Main')
 			//Icon_heart.setVisibility(true);
 		}
 	},
