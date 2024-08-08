@@ -40,7 +40,7 @@
     "Authors",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1721724813572,
+  "columnUpdatedAt": 1723117084738,
   "columnWidthMap": {
     "Authors": 125,
     "ID": 68,
@@ -375,7 +375,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "rowIndex",
       "notation": "standard",
       "originalId": "rowIndex",
@@ -389,7 +389,7 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 58,
+  "rightColumn": 64,
   "searchKey": "",
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{FavUseInTable_qry.data}}",
