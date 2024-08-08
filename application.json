@@ -24,7 +24,7 @@
   "pages": [
     {
       "id": "Page1",
-      "isDefault": true
+      "isDefault": false
     },
     {
       "id": "Sheet1",
@@ -32,7 +32,7 @@
     },
     {
       "id": "NoTable",
-      "isDefault": false
+      "isDefault": true
     },
     {
       "id": "AuthorsUnique2",
