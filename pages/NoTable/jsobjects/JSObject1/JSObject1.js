@@ -139,10 +139,8 @@ export default {
 				.then(() =>Text1_quote.setText(Sh1NotUsedInTable__qry.data[0].Quotes).toString())
 				.then(() => JSObject1.shwPgNum())
 				.then(() =>{if(this.firstLoad){JSObject1.chkHasUsrFav();this.firstLoad=0}})
-
 			//  .then(()=>showAlert('chkHasUsrFav is async & had returned.'))
 			//	.then(() =>{showAlert('rowToSkipB4Qry='+this.rowToSkipB4Qry.toString()+'\n '+'totalRec4CurAuthor='+this.totalRec4CurAuthor,'Info')})
-
 
 		}else{//--user want to view Favorite Quotes
 			FavNotUseInTable2_qry.run()
@@ -160,7 +158,7 @@ export default {
 			FavUseInTable_qry.data.filter( itm=>{
 				return	itm.UserEmail==appsmith.user.email?this.usrFavTotal++:nomtch++;
 			})
-		}).then(()=>this.usrFavTotal>0?Butt_star.setVisibility(true):Butt_star.setVisibility(true))
+		}).then(()=>this.usrFavTotal>0?Butt_star.setVisibility(true):Butt_star.setVisibility(false))
 		//.then(()=>showAlert('2nd showAlert  this.usrFavTotal='+this.usrFavTotal))
 			.then(()=>{
 			if (this.usrFavTotal>0){

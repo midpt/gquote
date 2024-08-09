@@ -23,9 +23,9 @@
   },
   "columnOrder": [
     "ID",
-    "SelectedAuthor",
-    "TotalQuotes",
     "rowIndex",
+    "Sheet",
+    "TotalRecords",
     "customColumn1"
   ],
   "columnSizeMap": {
@@ -33,7 +33,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1719535748188,
+  "columnUpdatedAt": 1723171151767,
   "columnWidthMap": {
     "SelectedAuthor": 119
   },
@@ -89,16 +89,16 @@
       "key": "primaryColumns.ID.computedValue"
     },
     {
-      "key": "primaryColumns.SelectedAuthor.computedValue"
-    },
-    {
-      "key": "primaryColumns.TotalQuotes.computedValue"
-    },
-    {
       "key": "primaryColumns.rowIndex.computedValue"
     },
     {
       "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.Sheet.computedValue"
+    },
+    {
+      "key": "primaryColumns.TotalRecords.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -179,20 +179,20 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "SelectedAuthor": {
-      "alias": "SelectedAuthor",
+    "Sheet": {
+      "alias": "Sheet",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"SelectedAuthor\"]))}}",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Sheet\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
-      "id": "SelectedAuthor",
+      "id": "Sheet",
       "index": 1,
       "isCellEditable": false,
       "isCellVisible": true,
@@ -202,9 +202,9 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "SelectedAuthor",
+      "label": "Sheet",
       "notation": "standard",
-      "originalId": "SelectedAuthor",
+      "originalId": "Sheet",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
@@ -213,20 +213,20 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "TotalQuotes": {
-      "alias": "TotalQuotes",
+    "TotalRecords": {
+      "alias": "TotalRecords",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"TotalQuotes\"]))}}",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"TotalRecords\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
-      "id": "TotalQuotes",
+      "id": "TotalRecords",
       "index": 2,
       "isCellEditable": false,
       "isCellVisible": true,
@@ -236,9 +236,9 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "TotalQuotes",
+      "label": "TotalRecords",
       "notation": "standard",
-      "originalId": "TotalQuotes",
+      "originalId": "TotalRecords",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

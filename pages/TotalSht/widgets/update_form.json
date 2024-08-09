@@ -133,22 +133,22 @@
       "key": "schema.__root_schema__.children.ID.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.SelectedAuthor.borderRadius"
+      "key": "schema.__root_schema__.children.Sheet.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.SelectedAuthor.accentColor"
+      "key": "schema.__root_schema__.children.Sheet.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.TotalQuotes.borderRadius"
+      "key": "schema.__root_schema__.children.Sheet.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.TotalQuotes.defaultValue"
+      "key": "schema.__root_schema__.children.TotalRecords.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.TotalQuotes.accentColor"
+      "key": "schema.__root_schema__.children.TotalRecords.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.SelectedAuthor.options"
+      "key": "schema.__root_schema__.children.TotalRecords.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -167,9 +167,6 @@
     },
     {
       "key": "onSubmit"
-    },
-    {
-      "key": "schema.__root_schema__.children.TotalQuotes.isRequired"
     }
   ],
   "dynamicTriggerPathList": [
@@ -231,50 +228,49 @@
           "position": 0,
           "sourceData": 1
         },
-        "SelectedAuthor": {
+        "Sheet": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "SelectedAuthor",
+          "accessor": "Sheet",
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "",
-          "fieldType": "Select",
-          "identifier": "SelectedAuthor",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isFilterable": false,
-          "isRequired": false,
-          "isVisible": true,
-          "label": "Selected Author",
-          "labelTextSize": "0.875rem",
-          "options": "{{}}",
-          "originalIdentifier": "SelectedAuthor",
-          "position": 1,
-          "serverSideFiltering": false,
-          "sourceData": "TM"
-        },
-        "TotalQuotes": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "TotalQuotes",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.TotalQuotes))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Number Input",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Sheet))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
           "iconAlign": "left",
-          "identifier": "TotalQuotes",
+          "identifier": "Sheet",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Total Quotes",
+          "label": "Sheet",
           "labelTextSize": "0.875rem",
-          "originalIdentifier": "TotalQuotes",
+          "originalIdentifier": "Sheet",
+          "position": 1,
+          "sourceData": "Sheet1"
+        },
+        "TotalRecords": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "TotalRecords",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.TotalRecords))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "TotalRecords",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Total Records",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "TotalRecords",
           "position": 2,
-          "sourceData": 2
+          "sourceData": 829
         }
       },
       "dataType": "object",
