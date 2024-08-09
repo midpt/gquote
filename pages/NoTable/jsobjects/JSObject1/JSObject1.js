@@ -125,9 +125,13 @@ export default {
 	},
 
 	shwQuoteOnTxtBox:()=>{
+    if(appsmith.user.username=='anonymousUser'){
+			Butt_addFav.setVisibility(false);
+			Butt_addFav.setDisabled(true);
+			Butt_star.setVisibility(false)
+			Butt_star.setDisabled(true);
+		}
 		//-----If user want to view main quote i.e not Favorite view
-		showAlert('appsmith.user.username='+appsmith.user.username)
-		//if (appsmith.user.name)
 		if (!this.favViewActive){	
 			//Butt_star.setVisibility(false)
 			Sh1NotUsedInTable__qry.run()
