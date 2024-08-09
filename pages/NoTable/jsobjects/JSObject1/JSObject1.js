@@ -199,7 +199,7 @@ export default {
 					return	this.rowToSkipB4Qry++;
 					//	var aa=  AuthorTotal_qry.data.filter(i=>i.AuthorNoRepeat.filter(j=>j.AuthorNoRepeat))
 					//	resolve('nxtPg Ok.');
-				}else{return show('You have reached the last record for this Author!')}
+				}else{return showAlert('You have reached the last record for this Author!')}
 				//});
 
 				//--Get randomised Quote--
