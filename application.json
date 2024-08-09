@@ -1,7 +1,7 @@
 {
   "appIsExample": false,
   "appLayout": {
-    "type": "MOBILE"
+    "type": "TABLET"
   },
   "applicationDetail": {
     "appPositioning": {
@@ -18,7 +18,7 @@
   "collapseInvisibleWidgets": true,
   "color": "#C7F3E3",
   "evaluationVersion": 2,
-  "icon": "chat",
+  "icon": "package",
   "pages": [
     {
       "id": "Page1",
@@ -42,7 +42,7 @@
     }
   ],
   "unpublishedAppLayout": {
-    "type": "MOBILE"
+    "type": "TABLET"
   },
   "unpublishedApplicationDetail": {
     "appPositioning": {
