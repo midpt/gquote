@@ -15,12 +15,10 @@ export default {
 	usrFavUnicAthrTotal:0, // keep count how many favorite unique Authors current user has
 	favViewActive:0, // 1 user want to view his Favourie quotes; changes when user click butt_star
 
-	func1(){
+	func1: async()=>{
 		//	Select_author.setOptions("apple"); 
 		//--set defualt selected label
-		//Select_author.setSelectedOption("Mahatma Gandhi")
-		//	.then(()=>showAlert(Select_author.selectedOptionValue+'  '+Select_author.selectedOptionLabel))
-		Container2.setVisibility(false)
+		
 
 	},
 
