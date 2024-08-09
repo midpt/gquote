@@ -130,6 +130,7 @@ export default {
 			Butt_addFav.setDisabled(true);
 			Butt_star.setVisibility(false)
 			Butt_star.setDisabled(true);
+			Container2.setVisibility(false)
 		}
 		//-----If user want to view main quote i.e not Favorite view
 		if (!this.favViewActive){	
