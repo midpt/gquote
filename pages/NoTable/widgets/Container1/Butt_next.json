@@ -35,7 +35,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "2de09nasml",
-  "leftColumn": 55,
+  "leftColumn": 59,
   "minWidth": 120,
   "mobileBottomRow": 10,
   "mobileLeftColumn": 45,
@@ -58,7 +58,7 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 58,
+  "rightColumn": 62,
   "searchTags": [
     "click",
     "submit"
