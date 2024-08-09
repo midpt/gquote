@@ -2,7 +2,7 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "10",
-  "bottomRow": 26,
+  "bottomRow": 32,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -45,15 +45,15 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 25,
-  "originalTopRow": 12,
+  "originalBottomRow": 43,
+  "originalTopRow": 13,
   "overflow": "NONE",
   "parentColumnSpace": 10.82763671875,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 37,
+  "rightColumn": 63,
   "searchTags": [
     "typography",
     "paragraph",
