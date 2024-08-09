@@ -126,6 +126,8 @@ export default {
 
 	shwQuoteOnTxtBox:()=>{
 		//-----If user want to view main quote i.e not Favorite view
+		showAlert('appsmith.user.username='+appsmith.user.username)
+		//if (appsmith.user.name)
 		if (!this.favViewActive){	
 			//Butt_star.setVisibility(false)
 			Sh1NotUsedInTable__qry.run()
